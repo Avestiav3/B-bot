@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands, tasks
 import sqlite3
 import asyncio
@@ -9,7 +10,7 @@ import random
 # ══════════════════════════════════════════
 #  CONFIG — modifie ces valeurs !
 # ══════════════════════════════════════════
-TOKEN = "TOKEN"
+TOKEN = os.getenv("TOKEN")
 PREFIX = "!"
 STATS_CHANNEL_NAME = "stats"
 TIMEZONE = "Europe/Paris"
